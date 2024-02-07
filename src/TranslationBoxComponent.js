@@ -41,16 +41,16 @@ const TranslationBoxComponent = ({ translate, transcript, language }) => {
             textPair.className = styles.translationTranscriptPair
             translateP.className = styles.translatedText
             transcriptP.className = styles.transcriptText
-            //            if (language == churchProperties.hostLanguage) {
-            //                translateP.textContent = transcript
-            //                textPair.appendChild(translateP)
-            //            } else {
-            translateP.textContent = translate
-            transcriptP.textContent = transcript
-            textPair.appendChild(translateP)
-            textPair.appendChild(transcriptP)
-            //            }
-            if (language == "ar") {
+//            if (language == churchProperties.hostLanguage) {
+//                translateP.textContent = transcript
+//                textPair.appendChild(translateP)
+//            } else {
+                translateP.textContent = translate
+                transcriptP.textContent = transcript
+                textPair.appendChild(translateP)
+                textPair.appendChild(transcriptP)
+//            }
+            if (language == "ar" || language == "fa") {
                 outerBox.dir = "rtl"
             } else {
                 outerBox.dir = "ltr"
